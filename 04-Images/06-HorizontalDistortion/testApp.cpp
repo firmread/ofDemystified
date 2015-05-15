@@ -5,7 +5,7 @@ ofImage image2;		//Modified image
 
 //--------------------------------------------------------------
 void testApp::setup(){
-	image.loadImage( "sunflower.png" );	//Load image	
+	image.loadImage( "../../../Images/sunflower.png" );	//Load image	
 	image2.clone( image ); 				//Copy image to image2
 }
 

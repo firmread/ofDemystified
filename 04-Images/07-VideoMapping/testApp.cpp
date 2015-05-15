@@ -6,7 +6,7 @@ int ind = 0;			//Index of selected corner, 0..3
 
 void testApp::setup(){
 	//Load texture image
-	ofLoadImage( texture, "sunflower.png" );	
+	ofLoadImage( texture, "../../../Images/sunflower.png" );	
 
 	//Set up initial corners
 	p[0].x = 100;	p[0].y = 100;

@@ -29,7 +29,7 @@ void testApp::setup(){
 	mesh.addTexCoord( ofPoint( 300, 10 ) );		//v1
 
 	//Load an image
-	image.loadImage( "sunflower.png" );
+	image.loadImage( "../../../Images/sunflower.png" );
 
 
 	setNormals( mesh );			//Set normals to the surface

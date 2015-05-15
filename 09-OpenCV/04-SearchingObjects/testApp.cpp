@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-	video.loadMovie("fruits.mov");	//Load the video file
+	video.loadMovie("../../../Content/fruits.mov");	//Load the video file
 	video.play();					//Start the video to play	
 	drawMode = 0;
 }

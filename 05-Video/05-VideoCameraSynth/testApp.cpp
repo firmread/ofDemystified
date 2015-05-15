@@ -21,7 +21,7 @@ void testApp::setup(){
 
 
 	//Load and start prerecorded movie to play
-	video.loadMovie( "handsTrees.mov" );
+	video.loadMovie( "../../../Video/handsTrees.mov" );
 	video.play();
 }
 

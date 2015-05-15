@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 	ofImage imageOf;	//Temporary image for loading from the file
-	imageOf.loadImage( "sunflower.png" );	//Load image from
+	imageOf.loadImage( "../../../Content/sunflower.png" );	//Load image from
 	//the file
 
 	//Set image pixels

@@ -4,7 +4,7 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 	//Load background
-	backVideo.loadMovie( "elephant.mov" );
+	backVideo.loadMovie( "../../../Video/elephant.mov" );
 	backVideo.play();
 
 	//Set the screen size equal to the backVideo dimensions
@@ -16,7 +16,7 @@ void testApp::setup(){
 	ofDirectory dir;
 
 	//2. Get the number of files in the folder data/woolCloudSeq
-	int n = dir.listDir("woolCloudSeq");
+	int n = dir.listDir("../../../Video/woolCloudSeq");
 
 	//3. Set the array size to n
 	seq.resize( n );	

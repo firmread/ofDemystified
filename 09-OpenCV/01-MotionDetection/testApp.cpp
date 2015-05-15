@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-	video.loadMovie("handsTrees.mov");	//Load the video file
+	video.loadMovie("../../../Content/handsTrees.mov");	//Load the video file
 	video.play();						//Start the video to play
 }
 

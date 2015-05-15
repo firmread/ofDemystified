@@ -3,7 +3,7 @@
 //--------------------------------------------------------------
 void testApp::setup(){
 	ofImage imageOf;
-	imageOf.loadImage( "table.png" );
+	imageOf.loadImage( "../../../Content/table.png" );
 	image.setFromPixels( imageOf.getPixelsRef() );
 }
 

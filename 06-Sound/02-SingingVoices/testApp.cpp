@@ -10,7 +10,7 @@ void testApp::setup(){
 	//Load and set up the sound samples
 	for ( int i=0; i<N; i++) {
 		sound[i].loadSound(
-			"vox" + ofToString( i + 1 ) + ".wav" );
+			"../../../Sounds/vox" + ofToString( i + 1 ) + ".wav" );
 		sound[i].setLoop( true );
 
 		//Do some stereo panoraming of the sounds
