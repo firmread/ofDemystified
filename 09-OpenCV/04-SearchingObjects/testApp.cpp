@@ -99,7 +99,7 @@ void testApp::draw(){
 		ofEnableAlphaBlending();
 		ofSetColor( 255, 255, 255 );
 		video.draw( 0, 0 );
-		img.draw( 0, 0, video.width, video.height );
+		img.draw( 0, 0, video.getWidth(), video.getHeight() );
 	}
 }
 

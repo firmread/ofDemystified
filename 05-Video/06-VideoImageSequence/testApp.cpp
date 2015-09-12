@@ -8,7 +8,7 @@ void testApp::setup(){
 	backVideo.play();
 
 	//Set the screen size equal to the backVideo dimensions
-	ofSetWindowShape( backVideo.width, backVideo.height );
+	ofSetWindowShape( backVideo.getWidth(), backVideo.getHeight() );
 
 	//Read image sequence from the folder
 

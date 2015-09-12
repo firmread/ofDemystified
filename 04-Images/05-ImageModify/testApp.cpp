@@ -11,14 +11,14 @@ void testApp::setup(){
 	unsigned char *data = image.getPixels();
 
 	//Calculate number of pixel components
-	int components = image.bpp / 8;
+	int components = image.getPixels().getBitsPerPixel() / 8;
 
 	//Modify pixel array
-	for (int y=0; y<image.height; y++) {
-		for (int x=0; x<image.width; x++) {
+	for (int y=0; y<image.getHeight(); y++) {
+		for (int x=0; x<image.getWidth(); x++) {
 
 			//Read pixel (x,y) color components
-			int index = components * (x + image.width * y);
+			int index = components * (x + image.getWidth() * y);
 			int red = data[ index ];
 			int green = data[ index + 1 ];
 			int blue = data[ index + 2 ];
