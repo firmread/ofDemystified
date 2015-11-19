@@ -8,7 +8,7 @@ ofPoint pos, vel;      //Ball position and velocity
 //--------------------------------------------------------------
 void testApp::setup(){
 	//Set up sound sample
-	sound.loadSound( "bounce.wav" );  //Load sound sample
+	sound.loadSound( "../../../Sounds/bounce.wav" );  //Load sound sample
 	sound.setMultiPlay( true );       //Set multiplay mode
 
 	//Model setup

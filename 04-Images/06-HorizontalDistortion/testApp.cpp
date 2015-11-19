@@ -5,7 +5,7 @@ ofImage image2;		//Modified image
 
 //--------------------------------------------------------------
 void testApp::setup(){
-	image.loadImage( "sunflower.png" );	//Load image	
+	image.loadImage( "../../../Images/sunflower.png" );	//Load image	
 	image2.clone( image ); 				//Copy image to image2
 }
 
@@ -14,14 +14,14 @@ void testApp::update(){
 	float time = ofGetElapsedTimef();
 
 	//Build image2 using image
-	for (int y=0; y<image.height; y++) {
-		for (int x=0; x<image.width; x++) {
+	for (int y=0; y<image.getHeight(); y++) {
+		for (int x=0; x<image.getWidth(); x++) {
 			//Use y and time for computing shifted x1
 			float amp = sin( y * 0.03 );
 			int x1 = x + sin( time * 2.0 ) * amp * 50.0;
 
 			//Clamp x1 to range [0, image.width-1]
-			x1 = ofClamp( x1, 0, image.width - 1 );
+			x1 = ofClamp( x1, 0, image.getWidth() - 1 );
 
 			//Set image2(x, y) equal to image(x1, y)
 			ofColor color = image.getColor( x1, y );

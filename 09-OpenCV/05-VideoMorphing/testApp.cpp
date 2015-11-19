@@ -5,8 +5,8 @@
 void testApp::setup()
 {
 	ofImage imageOf1, imageOf2;			//Load openFrameworks' images
-	imageOf1.loadImage("hands1.png");
-	imageOf2.loadImage("hands2.png");
+	imageOf1.loadImage("../../../Content/hands1.png");
+	imageOf2.loadImage("../../../Content/hands2.png");
 
 	color1.setFromPixels( imageOf1 );	//Convert to ofxCv images
 	color2.setFromPixels( imageOf2 );
@@ -66,7 +66,7 @@ void testApp::setup()
 
 	//Load checkerboard image
 	ofImage imageTest;
-	imageTest.loadImage("checkerBoard.png");
+	imageTest.loadImage("../../../Content/checkerBoard.png");
 	colorTest.setFromPixels( imageTest );
 
 	//Make morphing at first time

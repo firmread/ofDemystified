@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-	video.loadMovie( "handsTrees.mov" );	//Load video file
+	video.loadMovie( "../../../Video/handsTrees.mov" );	//Load video file
 	video.play();							//Start video to play	
 
 	//Fill the table by random values from 0 to 255

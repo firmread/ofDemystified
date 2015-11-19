@@ -5,7 +5,7 @@ ofImage image;		//Declare image object
 //--------------------------------------------------------------
 void testApp::setup(){
 	//Load image file
-	image.loadImage("sunflower.png");	
+	image.loadImage("../../../Images/sunflower.png");	
 }
 
 //--------------------------------------------------------------

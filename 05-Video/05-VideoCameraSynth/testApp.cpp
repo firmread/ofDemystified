@@ -21,7 +21,7 @@ void testApp::setup(){
 
 
 	//Load and start prerecorded movie to play
-	video.loadMovie( "handsTrees.mov" );
+	video.loadMovie( "../../../Video/handsTrees.mov" );
 	video.play();
 }
 
@@ -46,7 +46,7 @@ void testApp::draw(){
 
 	//Draw live unchanged video frame at right,
 	//in a half of its size
-	grabber.draw( image.width + 10, 0, 320, 240 );
+	grabber.draw( image.getWidth() + 10, 0, 320, 240 );
 }
 
 //--------------------------------------------------------------

@@ -39,8 +39,8 @@ void testApp::draw(){
 	fbo.begin();
 	ofBackground( 0, 0, 0, 0 );
 	ofSetColor( 255, 255, 255 );
-	float w1 = image.width * 2;
-	float h1 = image.height * 2;
+	float w1 = image.getWidth() * 2;
+	float h1 = image.getHeight() * 2;
 	image.draw( w/2-w1/2, h/2-h1/2, w1, h1 );
 	fbo.end();
 

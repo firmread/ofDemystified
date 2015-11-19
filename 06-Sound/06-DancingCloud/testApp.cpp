@@ -18,7 +18,7 @@ float time0 = 0;		//Time value, used for dt computing
 //--------------------------------------------------------------
 void testApp::setup(){
 	//Set up sound sample
-	sound.loadSound( "surface.wav" );	
+	sound.loadSound( "../../../Sounds/surface.wav" );	
 	sound.setLoop( true );
 	sound.play();
 

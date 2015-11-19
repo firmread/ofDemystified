@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-	video.loadMovie( "handsTrees.mov" );	//Load video file
+	video.loadMovie( "../../../Video/handsTrees.mov" );	//Load video file
 
 	//Play video with 1/4 of its normal speed
 	//for better seeing slit-scan effect

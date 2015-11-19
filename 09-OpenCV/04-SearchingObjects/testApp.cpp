@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-	video.loadMovie("fruits.mov");	//Load the video file
+	video.loadMovie("../../../Content/fruits.mov");	//Load the video file
 	video.play();					//Start the video to play	
 	drawMode = 0;
 }
@@ -99,7 +99,7 @@ void testApp::draw(){
 		ofEnableAlphaBlending();
 		ofSetColor( 255, 255, 255 );
 		video.draw( 0, 0 );
-		img.draw( 0, 0, video.width, video.height );
+		img.draw( 0, 0, video.getWidth(), video.getHeight() );
 	}
 }
 
