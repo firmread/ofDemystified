@@ -36,8 +36,14 @@ void ofApp::update(){
 void ofApp::draw(){
 	ofEnableDepthTest();			//Enable z-buffering
 
+    //Disable lighting
+    ofDisableLighting();
+    
 	//Set a background
 	ofBackgroundGradient( ofColor( 255 ), ofColor( 128 ) );
+
+    //Enagle lighting again.
+    ofEnableLighting();
 
 	ofPushMatrix();					//Store the coordinate system
 
